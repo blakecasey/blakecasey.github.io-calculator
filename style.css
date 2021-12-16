@@ -1,0 +1,114 @@
+/* quick reset so all our padding is the right size */
+
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+.calculator input,
+.calc-button   {
+  font-family: 'Space Mono';
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* add some spacing */
+  body          {
+    background: #ffffff;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  
+  /* limit the width and center */
+  .calculator .formstyle  {
+    background: #000000;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 75px;
+    border: 2px solid #111;
+    border-radius: 25px;
+  }
+
+  .calc-button  {
+    background: rgb(51, 51, 51); /* light background with opacity 50% */
+    border: 1px solid #111; /* black border */
+    padding: 15px;
+    color: #EEE; /* white text */
+    border-radius: 30px; /* rounded corners */
+    font-size: 23px; /* larger fonts */
+    cursor: pointer; /* make it look clickable */
+  }
+
+  .calculator input   {
+    /* reset basic form styles */
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+  
+    padding: 10px;
+    width: 97%;
+    border-bottom: 2px solid rgba(104, 104, 104, 0.699);
+    color: rgb(255, 255, 255);
+    text-align: right;
+    font-size: 40px;
+    border-radius: 0;
+  }
+
+
+  .calculator-buttons {
+    /* small spacing within our container */
+    padding: 40px;
+  
+    /* the grid stuff! */
+    display: grid;
+  
+    /* create 4 columns */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .calculator-buttons {
+
+  
+    /* add the grid gap */
+    grid-gap: 15px;
+  }
+
+
+  /* span across 3 columns */
+.is-zero,
+.is-clear   {
+  grid-column: span 3;
+}
+
+/* go blue */
+.is-clear   {
+  background: #9c9c9c;
+}
+
+.is-equals {
+    background: #ffab0f;
+  }
+
+
+ /* .formstyle
+{
+width: 300px;
+height: 330px;
+margin: 20px auto;
+border: 3px solid skyblue;
+border-radius: 5px;
+padding: 20px;
+text-align: center;
+background-color: grey;
+}*/
+
+
+.textview{
+    width: 400px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 10px;
+    background-color: rgb(255, 191, 14);
+    }	
+        
